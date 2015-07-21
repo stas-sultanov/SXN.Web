@@ -5,6 +5,9 @@
 	/// </summary>
 	public enum HttpStatusCode : ushort
 	{
+		/// <summary>
+		/// None.
+		/// </summary>
 		None = 0,
 
 		/// <summary>
