@@ -1,0 +1,23 @@
+<?xml version = "1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+	<metadata>
+		<id>SXN.Web</id>
+		<title>SXN.Web</title>
+		<version>255.255.255.255</version>
+		<authors>Stas Sultanov</authors>
+		<description>A collection of types that provides creation of fast and effective HTTP web services.</description>
+		<copyright>Copyright © 2015 Stas Sultanov.</copyright>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
+		<tags>Web Server, HTTP, Extensions</tags>
+	  <dependencies>
+		  <dependency id="SXN.Core" />
+		</dependencies>
+	</metadata>
+	<files>
+		<file src="bin\SXN.Web.dll" target="lib\net46" />
+		<file src="bin\SXN.Web.xml" target="lib\net46" />
+		<file src="bin\SXN.Web.pdb" target="lib\net46" />
+		<file src="src\**\*.cs" target="src" />
+	</files>
+</package>
