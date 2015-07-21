@@ -1,11 +1,7 @@
 # Enable -Verbose option
 [CmdletBinding()]
 
-#param([String] $nuget, [String] $apiKey, [String] $workingDir)
-
-param([String] $apiKey, [String] $workingDir)
-
-$nuget = 'NuGet.exe'
+param([String] $nuget, [String] $apiKey, [String] $workingDir)
 
 # Check if path to nuget.exe is specified
 if (-not $nuget)
@@ -35,17 +31,11 @@ foreach ($nuspecFile in $nuspecFiles)
 	Invoke-Expression "$nuget pack $nuspecFile -Verbosity detailed -Symbols -OutputDirectory $workingDir"
 }
 
-# Remove not nupkg files and folders
-Get-ChildItem -Path $workingDir -Recurse -Exclude '*.nupkg' | Remove-Item -Force -Recurse
-
 # Enumerate packages files
 $packageFiles = Get-ChildItem -Path $workingDir -Recurse -File -Include '*.nupkg' -Exclude '*.symbols.nupkg'
 
 foreach ($file in $packageFiles)
 {
-	# Push symbols files
+	# Push packages
 	Invoke-Expression "$nuget push $file"
-
-	# Delete file
-	# Remove-Item $file -Force
 }
