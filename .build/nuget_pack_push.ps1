@@ -19,7 +19,11 @@ if (-not $workingDir)
 	exit 1
 }
 
-$outDir = "$workingDir\pkg"
+# Compose output directory path
+$outDir = "$workingDir\.pkg"
+
+# Create output directory
+New-Item $outDir -type directory
 
 # Set api key
 Invoke-Expression "$nuget setApiKey $apiKey"
