@@ -1,0 +1,65 @@
+﻿{
+	"Name" : "TestHttpServer",
+
+	"EnvironmentId": "local",
+
+	"Listener":
+	{
+		"Prefixes": [ "http://*:22222/" ],
+		"AuthenticationSchemes": "Anonymous",
+		"Realm": null,
+		"IgnoreWriteExceptions": true
+	},
+
+	"PerformanceCounters":
+	{
+		"ActiveTasks":
+		{
+			"Category": "TestServer",
+			"CounterType": "NumberOfItems32",
+			"Name": "SnifferService/# of Active Tasks"
+		},
+		"BadRequestsPerSecond":
+		{
+			"Category": "TestServer",
+			"CounterType": "NumberOfItems32",
+			"Name": "SnifferService/Errors/Sec"
+		},
+		"RequestsPerSecond":
+		{
+			"Category": "TestServer",
+			"CounterType": "RateOfCountsPerSecond32",
+			"Name": "SnifferService/Requests/Sec"
+		},
+		"RequestProcessingAverageTime":
+		{
+			"Category": "TestServer",
+			"CounterType": "AverageTimer32",
+			"Name": "SnifferService/Requests Processing Time"
+		},
+		"RequestProcessingAverageBase":
+		{
+			"Category": "TestServer",
+			"CounterType": "AverageBase",
+			"Name": "SnifferService/Requests Processing Base"
+		},
+		"Get-File":
+		{
+			"Category": "TestServer",
+			"CounterType": "RateOfCountsPerSecond32",
+			"Name": "SnifferService/Get File Requests/Sec"
+		},
+		"Get-Redirect":
+		{
+			"Category": "TestServer",
+			"CounterType": "RateOfCountsPerSecond32",
+			"Name": "SnifferService/Get Redirect Requests/Sec"
+		},
+		"Post-Collected-Data":
+		{
+			"Category": "TestServer",
+			"CounterType": "RateOfCountsPerSecond32",
+			"Name": "SnifferService/Post Collected Data Requests/Sec"
+		}
+	}
+}

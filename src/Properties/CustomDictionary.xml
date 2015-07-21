@@ -1,0 +1,29 @@
+﻿<?xml version = "1.0" encoding = "utf-8"?>
+<Dictionary>
+	<Words>
+		<Recognized>
+			<Word>gzip</Word>
+			<Word>exi</Word>
+			<Word>sdch</Word>
+			<Word>bzip</Word>
+			<Word>peerdist</Word>
+			<Word>referer</Word>
+			<Word>wap</Word>
+		</Recognized>
+		<Compound>
+			<Term CompoundAlternate="WebServer">webserver</Term>
+		</Compound>
+	</Words>
+	<Acronyms>
+		<CasingExceptions>
+			<Acronym>OK</Acronym>
+			<Acronym>IDC</Acronym>
+			<Acronym>DPI</Acronym>
+			<Acronym>IME</Acronym>
+			<Acronym>TLS</Acronym>
+			<Acronym>DNT</Acronym>
+			<Acronym>XATT</Acronym>
+			<Acronym>Os</Acronym>
+		</CasingExceptions>
+	</Acronyms>
+</Dictionary>

@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B3B75BE1-9DB3-41D9-9151-6100A67BA330}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SXN.Web</RootNamespace>
+    <AssemblyName>SXN.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>..\bin\SXN.Web.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisIgnoreGeneratedCode>false</CodeAnalysisIgnoreGeneratedCode>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;CODE_ANALYSIS;</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SXN.Core, Version=4.4.721.8, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SXN.Core.4.4.0721.8\lib\net46\SXN.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Runtime.Serialization" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="HttpServer\HttpRequestHandlerConstructor.cs" />
+    <Compile Include="HttpServer\HttpUrlSegment.cs" />
+    <Compile Include="Http\HttpContext.cs" />
+    <Compile Include="Http\HttpHeader.cs" />
+    <Compile Include="HttpServer\HttpRequestPatternAttribute.cs" />
+    <Compile Include="HttpServer\HttpRequestPattern.cs" />
+    <Compile Include="Http\HttpRequest.cs" />
+    <Compile Include="HttpServer\HttpRequestHandlerBase.cs" />
+    <Compile Include="Http\HttpStatusCode.cs" />
+    <Compile Include="Http\UrlArguments.cs" />
+    <Compile Include="Http\HttpStatusCodeEx.cs" />
+    <Compile Include="Http\HttpResponse.cs" />
+    <Compile Include="Http\HttpMethod.cs" />
+    <Compile Include="Http\HttpListenerSettings.cs" />
+    <Compile Include="HttpServer\HttpServerSettings.cs" />
+    <Compile Include="Http\HttpCompression.cs" />
+    <Compile Include="Http\HttpHeaderEx.cs" />
+    <Compile Include="HttpServer\HttpServerBase.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDictionary Include="Properties\CustomDictionary.xml">
+      <SubType>Designer</SubType>
+    </CodeAnalysisDictionary>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
