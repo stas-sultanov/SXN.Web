@@ -72,7 +72,7 @@ namespace SXN.Web
 
 #pragma warning disable 4014
 
-			Task.Run(() => service.RunAsync(), cancellationToken);
+			Task.Run(() => service.RunAsync(cancellationToken), cancellationToken);
 
 #pragma warning restore 4014
 
@@ -124,7 +124,7 @@ namespace SXN.Web
 
 			await service.ActivateAsync(cancellationToken);
 
-			var runTask = Task.Run(() => service.RunAsync(), cancellationToken);
+			var runTask = Task.Run(() => service.RunAsync(cancellationToken), cancellationToken);
 
 			await Task.Delay(TimeSpan.FromMinutes(1), cancellationToken);
 
