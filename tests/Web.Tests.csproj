@@ -8,7 +8,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SXN.Web</RootNamespace>
     <AssemblyName>SXN.Web.Tests</AssemblyName>
-    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -51,8 +51,8 @@
       <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="SXN.Core, Version=4.4.728.1, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\SXN.Core.4.4.0728.1\lib\net46\SXN.Core.dll</HintPath>
+    <Reference Include="SXN.Core, Version=4.4.805.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SXN.Core.4.4.0805.1\lib\net45\SXN.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -73,7 +73,6 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <None Include="packages.config" />
     <Compile Include="HttpServer\HttpServer\CampaignRequestHandler.cs" />
     <Compile Include="HttpServer\HttpServer\GetFileHandler.cs" />
     <Compile Include="HttpServer\HttpServer\GetPostbackHandler.cs" />
@@ -93,6 +92,7 @@
     <None Include="HttpServerSettings.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

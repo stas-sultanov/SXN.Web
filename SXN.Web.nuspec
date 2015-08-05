@@ -15,9 +15,9 @@
 		</dependencies>
 	</metadata>
 	<files>
-		<file src="bin\SXN.Web.dll" target="lib\net46" />
-		<file src="bin\SXN.Web.xml" target="lib\net46" />
-		<file src="bin\SXN.Web.pdb" target="lib\net46" />
+		<file src="bin\SXN.Web.dll" target="lib\net45" />
+		<file src="bin\SXN.Web.xml" target="lib\net45" />
+		<file src="bin\SXN.Web.pdb" target="lib\net45" />
 		<file src="src\**\*.cs" target="src" />
 	</files>
 </package>

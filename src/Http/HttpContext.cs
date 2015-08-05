@@ -9,10 +9,6 @@ namespace SXN.Web
 	/// </summary>
 	public sealed class HttpContext : IDisposable
 	{
-		#region Fields
-
-		#endregion
-
 		#region Constructors
 
 		/// <summary>

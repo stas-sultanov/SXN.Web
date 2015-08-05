@@ -200,7 +200,7 @@ namespace SXN.Web
 				TraceEvent(EventLevel.Error, e.ToString());
 			}
 
-			return Task.CompletedTask;
+			return Task.FromResult(0);
 		}
 
 		#endregion

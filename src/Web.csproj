@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SXN.Web</RootNamespace>
     <AssemblyName>SXN.Web</AssemblyName>
-    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SccProjectName>SAK</SccProjectName>
     <SccLocalPath>SAK</SccLocalPath>
@@ -44,8 +44,8 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="SXN.Core, Version=4.4.728.1, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\SXN.Core.4.4.0728.1\lib\net46\SXN.Core.dll</HintPath>
+    <Reference Include="SXN.Core, Version=4.4.805.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SXN.Core.4.4.0805.1\lib\net45\SXN.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
