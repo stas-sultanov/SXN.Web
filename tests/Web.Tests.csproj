@@ -51,8 +51,8 @@
       <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="SXN.Core, Version=4.4.820.1, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\SXN.Core.4.4.0820.1\lib\net45\SXN.Core.dll</HintPath>
+    <Reference Include="SXN.Core, Version=4.4.910.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SXN.Core.4.4.0910.1\lib\net45\SXN.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
